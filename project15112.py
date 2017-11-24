@@ -26,7 +26,8 @@
 #   11/18 11:15 am      3:00 pm
 #   11/20 1:10 pm       2:50 pm
 #   11/21 6:12 pm       10:54 pm
-#   11/22 7:00 pm       7:56 pm   
+#   11/22 7:00 pm       7:56 pm
+
 
 
 
@@ -1528,7 +1529,7 @@ class FoodChain:
         self.suctext.config(bg=self.bgcolor)
         self.suctext.pack()
         self.sucok = Button(self.sucframe, text="Ok", command = lambda x=self.suc, y=pw: self.close(x,y))
-        self.sucok.config(bg=self.bgcolor)
+        self.sucok.config(highlightbackground=self.bgcolor)
         self.sucok.pack()
 
 
